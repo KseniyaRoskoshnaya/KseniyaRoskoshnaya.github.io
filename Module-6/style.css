@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding:0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 10px auto; 
+    width: 60%
+}
+
+.image-container {
+    width: 30%;
+    padding: 0.5% ;
+    flex-basis: 260px;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.card {
+    padding: 10px;
+    margin: 5% auto; 
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
+}
+
+.card-info {
+    color: rgb(53, 59, 66);
+}
+
+.card-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(53, 59, 66);
+    transition: color 0.3s, transform 0.2s;
+}
+
+.card-name:hover {
+    color:#3b5480;
+    transform: scale(1.15);
+}
+
+.like-button {
+    background: #1d427e;
+    color: #fff;
+    border: none;
+    padding: 4px 16px;
+    transition: width 0.2s, backgrond 0.2s;
+}
+
+.like-button:hover {
+    width: 100%;
+    background: #265fb9;
+}
+
+.like-button:focus {
+    outline: none;
+}
+
+.card:hover {
+    box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.2);
+}
+
+.card img {
+    transition: transform 0.2s;
+}
+
+.card img:hover {
+    transform: rotate(5deg);
+}
